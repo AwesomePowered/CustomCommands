@@ -6,7 +6,7 @@
 
     <groupId>net.poweredbyawesome</groupId>
     <artifactId>CustomCommands</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
     <packaging>jar</packaging>
 
     <name>CustomCommands</name>

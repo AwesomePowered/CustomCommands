@@ -1,4 +1,9 @@
 #Please use lowercase
+# <*>100 will send the message 100x
+# / will run a command from the console
+# \ will make the player run the command.
+# <player> <health> <hunger> will be replaced accordingly.
+#
 vote:
   - '&a----------&f[&6Vote&f]&a----------'
   - '&aPlanetMinecruft: &chttp://poweredbyhate.net/'
@@ -7,8 +12,73 @@ vote:
   - '&a----------&f[&6Vote&f]&a----------'
 
 discord:
-  - '&aInvite Link: &7https://discord.gg/SvFEBGW'
+  - "&8&m-----------------------------------&f"
+  - " "
+  - "&cYou can join our Discord here!"
+  - "&c&7https://discord.gg/SvFEBGW"
+  - " "
+  - "&8&m-----------------------------------&f"
+
+motd:
+  - "&8&m-----------------------------------&f"
+  - " "
+  - "&aWelcome back, &f<player>"
+  - "&cDiscord: &fhttps://discord.gg/SvFEBGW"
+  - "&cTwitter: &f@LaxWasHere"
+  - "&cStore: &fhttps://www.paypal.me/LaxWasHere"
+  - "&cYoutube: &fhttps://www.youtube.com/LaxWasHere"
+  - " "
+  - "&8&m-----------------------------------&f"
+
+twitter:
+  - "&8&m-----------------------------------&f"
+  - " "
+  - "&cFollow us on twitter!"
+  - "&7@LaxWasHere"
+  - " "
+  - "&8&m-----------------------------------&f"
+
+donate:
+  - "&8&m-----------------------------------&f"
+  - " "
+  - "&cDonate to our server!"
+  - "&chttps://www.paypal.me/LaxWasHere"
+  - " "
+  - "&8&m-----------------------------------&f"
+
+forums:
+  - "&8&m-----------------------------------&f"
+  - " "
+  - "&cCheck out our forums!"
+  - "&7https://www.spigotmc.org"
+  - " "
+  - "&8&m-----------------------------------&f"
+
+youtube:
+  - "&8&m-----------------------------------&f"
+  - " "
+  - "&cSubscribe to our youtube channel!"
+  - "&7https://www.youtube.com/LaxWasHere"
+  - " "
+  - "&8&m-----------------------------------&f"
+
+pleasekickme: #/ will run the command from the console
+  - "/kick <player> &cYou asked for it!"
+
+iatemycat: #\ will run the command from the player
+  - '\me I ate my cat <player>'
+
+clearmychat:
+  - " <*>100" #This will send an empty message 100x
+
+amiawesome:
+  - "&cYes <*>3" #This will '&cYes' 3x
+
 laxwashere:
   - '&aLaxWasHere, yes'
+
 electroniccat:
   - '&aLast known sighting:&c http://i.giphy.com/GFHJXPCoVQEec.gif'
+
+#opme: #THIS AS IT WILL ACTUALLY OP THE PLAYER. DO NOT UNCOMMENT!
+#  - "/op <player>"
