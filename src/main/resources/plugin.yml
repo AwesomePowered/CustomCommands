@@ -2,4 +2,5 @@ name: CustomCommands
 version: ${project.version}
 main: net.poweredbyawesome.customcommands.CustomCommands
 authors: [LaxWasHere]
+softdepend: [PlaceholderAPI]
 description: yes

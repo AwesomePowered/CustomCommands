@@ -1,5 +1,6 @@
 package net.poweredbyawesome.customcommands;
 
+import me.clip.placeholderapi.PlaceholderAPI;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -14,12 +15,14 @@ import java.util.ArrayList;
 public final class CustomCommands extends JavaPlugin implements Listener {
 
     public ArrayList<String> cmds = new ArrayList<>();
+    private boolean hasPlaceholder;
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
         Bukkit.getPluginManager().registerEvents(this, this);
         loadCommands();
+        hasPlaceholder = (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null);
     }
 
     public void loadCommands() {
@@ -61,6 +64,9 @@ public final class CustomCommands extends JavaPlugin implements Listener {
         message = message.replace("<player>", player.getName());
         message = message.replace("<health>", String.valueOf(player.getHealth()));
         message = message.replace("<hunger>", String.valueOf(player.getFoodLevel()));
+        if (hasPlaceholder) {
+            message = PlaceholderAPI.setPlaceholders(player, message);
+        }
         return message;
     }
 }
